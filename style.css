@@ -1,0 +1,197 @@
+* {
+    padding: auto;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Task1 {
+    width: 100%;
+    height: 1400px;
+    background-color: rgb(124, 215, 253);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+.cards {
+    margin-top: 30px;
+    height: 100%;
+}
+.card {
+    margin-top: 30px;
+    background-color: white;
+    width: 350px;
+    height: auto;
+}
+.img150 {
+    width: 350px;
+    height: 150px;
+    background-image: url(images/350x150.png);
+}
+.img100 {
+    width: 350px;
+    height: 100px;
+    background-image: url(images/350x100.png);
+}
+.img220 {
+    width: 350px;
+    height: 220px;
+    background-image: url(images/350x220.png);
+}
+.img230 {
+    width: 350px;
+    height: 230px;
+    background-image: url(images/350x230.png);
+}
+.img350 {
+    width: 350px;
+    height: 350px;
+    background-image: url(images/350x350.png);
+}
+.Task1 p {
+    font-size: 20px;
+}
+/* 
+
+
+
+Task 2 
+
+
+
+*/
+.Task2 {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.chat-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.message.annie {
+    justify-content: flex-start;
+}
+.message.jack {
+    justify-content: flex-end;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.message-content {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.message.annie .message-content {
+    background-color: #ffcccb;
+}
+.message.jack .message-content {
+    background-color: #add8e6;
+}
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.message.annie .message-header {
+    justify-content: flex-start;
+}
+.message.jack .message-header {
+    justify-content: flex-end;
+}
+.message-header .name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+.message-header .time {
+    font-size: 0.8em;
+    color: #777;
+}
+.message.jack .avatar {
+    background-image: url(images/avatar_1.png);
+}
+.message.annie .avatar {
+    background-image: url(images/avatar_2.png);
+}
+/* Task 3 */
+.Task3 {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.board-container {
+    display: flex;
+    height: 100%;
+    padding-top: 50px;
+    overflow-x: auto;
+}
+
+.boards-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.board {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    background-color: #444;
+    color: white;
+    margin-right: 10px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.board-header {
+    padding: 15px;
+    background-color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #666;
+}
+
+.board-content {
+    padding: 10px;
+}
+
+.task {
+    background-color: #666;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
